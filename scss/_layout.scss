@@ -1,0 +1,13 @@
+/*layout*/
+
+.container{
+  position: relative;
+  clear: both;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    padding: 4rem 2rem;
+  }
+}

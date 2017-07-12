@@ -1,0 +1,21 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="contact">
+      <div class="info" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name" class="name"><a href="/" class="brand">{{ site.title }}</a></span>
+        <a href="mailto:{{ contact.emailAddress }}" class="email" itemprop="email" onclick="ga('send', 'event', 'Contact', 'click', 'Email');">info@fidusglobalsolutions.com</a>
+        <span class="tel">773-782-6060</span>
+      </div>
+    </div>
+    <div class="engage">
+      <form class="site-form newsletter-signup">
+        <div class="field input inline">
+          <label class="hidden">Enter your email address</label>
+          <input type="text" placeholder="Your email address">
+          <button type="submit" class="button submit">Sign Up</button>
+        </div>
+        <p>Join our newsletter for news about upcoming events and insights into security from our expert team.</p>
+      </form>
+    </div>
+  </div>
+</footer>

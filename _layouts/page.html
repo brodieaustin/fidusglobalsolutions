@@ -1,0 +1,24 @@
+---
+layout: base
+type: "page"
+---
+
+<article class="page">
+  <div class="container">
+    <ul class="breadcrumbs">
+      {% for crumb in page.breadcrumbs %}
+        <li class="breadcrumb"><a href="{{ site.baseurl }}/{% if crumb != 'home' %}{{ crumb }}{% endif %}">{{ crumb }}</a></li>
+      {% endfor %}
+      <li class="breadcrumb"><a href="{{ page.url }}">{{ page.title }}</a></li>
+    </ul>
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <p class="subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+    </header>
+    <section class="page-content {% if page.has_columns == true %} columns{% endif %}">
+      {{ content }}
+    </section>
+  </div>
+</article>

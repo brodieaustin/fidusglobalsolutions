@@ -1,0 +1,33 @@
+.point{
+  display: none;
+  position: absolute;
+  top: -3rem;
+  text-align: center;
+  height: 6rem;
+  width: 100%;
+  z-index: 100;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: $white;
+    transform: skew(0deg, 6deg);
+    z-index: 100;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: $white;;
+    transform: skew(0deg, -6deg);
+    z-index: 100;
+  }
+}

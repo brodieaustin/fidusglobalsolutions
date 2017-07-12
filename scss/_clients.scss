@@ -1,0 +1,17 @@
+.client-section{
+  background: url('../img/running-closeup.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+
+  h2{
+    color: $white;
+  }
+
+  .client-testimonial{
+    @include client-testimonial($white);
+  }
+
+  &.tinted{
+    @include tinted($primary-color);
+  }
+}

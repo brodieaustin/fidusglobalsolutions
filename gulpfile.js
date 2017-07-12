@@ -49,7 +49,7 @@ gulp.task('sass', function () {
         .pipe(prefix(['last 2 versions'], { cascade: false }))
         //.pipe(cssnano())
         .pipe(gulp.dest('_site/assets/css'))
-        .pipe(browserSync.reload({stream:true}))
+        .pipe(browserSync.stream())
         .pipe(gulp.dest('assets/css'));
 });
 

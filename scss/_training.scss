@@ -1,0 +1,87 @@
+/*training*/
+
+.training-section{
+  position: relative;
+  background-color: $white;
+}
+
+.training-title{
+  margin-bottom: 0;
+  color: $primary-color;
+  font-size: 2.5rem;
+
+  small{
+    display: block;
+    margin-top: 1rem;
+    color: $secondary-color;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.training-meta{
+  @include unstyled-list();
+  margin-top: 1.5rem;
+  font-size: .8125rem;
+  color: lighten($font-color, 10%);
+
+  li{
+    margin-bottom: 2rem;
+  }
+
+  h3{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: .8125rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  p{
+    margin-top: 0;
+  }
+}
+
+.training-previews{
+  @include unstyled-list();
+}
+
+.training-preview{
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  //border-bottom: 1px solid $light-grey;
+
+  &:last-child{
+    border-bottom: 0;
+  }
+
+  a{
+    display: flex;
+    flex-wrap: wrap;
+    color: inherit;
+    overflow: hidden;
+  }
+
+  .training-title{
+    width: 100%;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      width: 40%;
+    }
+
+    small{
+      margin-top: .25rem;
+    }
+  }
+
+  .training-description{
+    width: 100%;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      width: calc(60% - 4rem);
+      margin-left: 4rem;
+
+    }
+  }
+}
